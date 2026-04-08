@@ -1,0 +1,138 @@
+.gallery,
+.gallery__slides,
+.gallery__slide {
+  height: auto;
+  display: block;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    color: #FFF;
+}
+
+.gallery__title-wrapper {
+    position: absolute;
+    top: 67px;
+    width: 100%;
+    z-index: 1;
+}
+
+.gallery__title {
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+}
+
+.gallery__slides {
+    width: 100%;
+}
+
+.gallery__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+.gallery__slide-active {
+    position: relative;
+    opacity: 1;
+}   
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery__text {
+    position: absolute;
+    bottom: 60px;
+    font-size: 30px;
+    line-height: 130%;
+    z-index: 1;
+}
+
+.gallery__controls-wrapper {
+    position: absolute;
+    bottom: 162px;
+    width: 100%;
+    z-index: 1;
+}
+
+.gallery__controls {
+    display: flex;
+    gap: 14px;
+}
+
+.gallery__control-prev, 
+.gallery__control-next {
+    width: 40px;
+    height: 40px;
+    background-image: url("../resources/control-arrow.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    color: #FFF;
+}
+
+.gallery__control-prev:hover,
+.gallery__control-next:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.gallery__control-next {
+    transform: rotateZ(180deg);
+}
+
+@media (max-width: 1199px) {
+    .gallery__title-wrapper {
+        top: 80px;
+    }
+
+    .gallery__title {
+        font-size: 20px;
+    }
+
+    .gallery__text {
+        bottom: 80px;
+        font-size: 25px;
+    }
+
+    .gallery__controls-wrapper {
+        bottom: 152px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .gallery__title-wrapper {
+        top: 61px;
+    }
+
+    .gallery__title {
+        font-size: 14px;
+    }
+
+    .gallery__img {
+        width: 100%;
+        min-height: 408px;
+    }
+
+    .gallery__text {
+        bottom: 60px;
+        font-size: 19px;
+    }
+
+    .gallery__controls-wrapper {
+        bottom: 50%;
+    }
+
+    .gallery__controls {
+        justify-content: space-between;
+    }
+}

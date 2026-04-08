@@ -1,0 +1,54 @@
+.footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: #FFF;
+}
+
+.footer-inner {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 450px;
+}
+
+.footer__link {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.footer__link:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.footer__studio-metrica {
+    margin-top: 87px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+    .footer-inner {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-inner {
+        padding-top: 30px;
+        padding-bottom: 26px;
+        width: 281px;
+    }
+
+    .footer__link {
+        font-size: 12px;
+    }
+
+    .footer__studio-metrica {
+        margin-top: 41px;
+        font-size: 13px;
+    }
+}

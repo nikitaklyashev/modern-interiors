@@ -1,0 +1,32 @@
+.apartment {
+    position: relative;
+    height: 717px;
+    margin-top: 0;
+}
+
+.apartment::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-height: 717px;
+    min-width: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../resources/apartment-lesnoy-peisage.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.apartment__title {
+    position: absolute;
+    bottom: 60px;
+    width: 443px;
+    height: 82px;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    line-height: 140%;
+    color: #FFF;
+}

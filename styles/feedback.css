@@ -1,0 +1,43 @@
+.feedback__title {
+    margin-bottom: 30px;
+}
+
+.feedback__name {
+    margin-bottom: 14px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feedback__text {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+}
+
+@media (max-width: 1199px) {
+    .feedback__name {
+        font-size: 35px;
+        line-height: 35px;
+        letter-spacing: -3%;
+    }
+
+    .feedback__text {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -3%;
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback__name {
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: -3%;
+    }
+
+    .feedback__text {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -3%;
+    }
+}

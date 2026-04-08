@@ -1,0 +1,50 @@
+.about-us__title {
+    margin-bottom: 30px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.about-us__text {
+    margin-bottom: 30px;
+    margin-left: 3px;
+    width: 1048px;
+    height: 366px;
+    font-size: 45px;
+    line-height: 136%;
+    letter-spacing: -0.03em;
+}
+
+.about-us__link {
+    display: block;
+    width: 255px;
+    height: 68px;
+    font-size: 20px;
+    line-height: 67px;
+    letter-spacing: -0.03em;
+}
+
+@media (max-width: 1199px) {
+
+    .about-us__text {
+        width: 690px;
+        height: 336px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .about-us__text {
+        width: 100%;
+        height: auto;
+        font-size: 22px;
+    }
+
+    .about-us__link {
+        width: 194px;
+        height: 51px;
+        font-size: 16px;
+        line-height: 51px;
+    }
+}
